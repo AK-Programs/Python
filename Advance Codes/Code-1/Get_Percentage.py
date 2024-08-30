@@ -24,4 +24,7 @@ percentage = total/maximum*100
 round_percentage = round(percentage, 2)
 
 print("You got", round_percentage,"% Percentages")
-# Comment How many Percentage you got!
+
+# In this code you can get your Percentage in your 7 Subjects. 
+# If in your School/College more subjects are there So, email me I will add more subjects. 
+# Comment How many Percentage you Got!
