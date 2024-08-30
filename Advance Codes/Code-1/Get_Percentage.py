@@ -24,3 +24,4 @@ percentage = total/maximum*100
 round_percentage = round(percentage, 2)
 
 print("You got", round_percentage,"% Percentages")
+# Comment How many Percentage you got!
