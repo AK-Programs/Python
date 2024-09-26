@@ -1,5 +1,5 @@
 <h1>Python Codes</h1>
-<hr style: "color:red">
+<hr>
 <br>
 <h3>Advanced and Basic Python Codes</h3>
 <br>
