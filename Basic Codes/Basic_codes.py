@@ -11,7 +11,7 @@ second = int(input("Enter second value :"))
 
 print("sum =", first + second)
 
-side = float(input("Enter square side :"))
+side = float(input("Enter square side :")) 
 
 print("Area of square = ", side * side)
 
