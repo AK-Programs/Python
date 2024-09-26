@@ -1,4 +1,6 @@
 <h1>Python Codes</h1>
-<hr>
-<p>This is my Python file</p>
-<p>I know some python I will learn more on Python</p>
+<hr style: "color:red">
+<br>
+<h3>Advanced and Basic Python Codes</h3>
+<br>
+<strong>Announcement: On 31/10/24 Python Mega Project</strong>
