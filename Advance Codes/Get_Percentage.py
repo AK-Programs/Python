@@ -10,7 +10,7 @@ sub5 = int(input("Enter your score in Social Science: "))
 # If Hindi subject is not in your school So, Type 0 
 sub6 = int(input("Enter your score in Hindi (If this subject is not in your school then Type 0) : ")) 
 
-# If Gujarati subject is not in your school So, Type 0 
+# If Gujarati subject is not in your school So, Type 0  
 sub7 = int(input("Enter your score in Gujarati (If this subject is not in your school then Type 0) : "))
 
 total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7 
