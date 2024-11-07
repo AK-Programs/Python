@@ -3,4 +3,4 @@
 <br>
 <h3>Advanced and Basic Python Codes</h3>
 <br>
-<strong>Announcement: On 31/10/24 Python Mega Project</strong>
+<strong> <b style="color:red">Latest Update</b> : I have uploaded new Python code in Advanced Codes Folder.</strong>
