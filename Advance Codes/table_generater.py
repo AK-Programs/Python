@@ -6,7 +6,7 @@ n = int(input("Enter a number to make a table of that number: "))
 i = 1
 
 while i <= 10:
-    print(n * i)
+    print(n,"x",i,"=",n * i)
 
     i += 1 
 
