@@ -1,5 +1,5 @@
 
-<center><h1>Python Codes</h1></center>
+<centre><h1>Python Codes</h1></centre>
 <hr>
 <h3>Advanced and Basic Python Codes</h3>
 <br>
