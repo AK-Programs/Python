@@ -1,8 +1,6 @@
 num = int(input("Guess any number: "))
 
-
 computer_guess = (num * 3 + 7) % 100  
-
 
 if computer_guess < num:
     print("You won! Your guess is higher.","Computer guess:",computer_guess)
