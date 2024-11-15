@@ -3,4 +3,4 @@
 <hr>
 <h3>Advanced and Basic Python Codes</h3>
 <br>
-<strong> <b>Latest Update</b> : I have uploaded new Python code in Advanced Codes Folder.</strong>
+<strong> <b>Latest Update</b> : I have uploaded new Python codes in Advanced Codes Folder.</strong>
