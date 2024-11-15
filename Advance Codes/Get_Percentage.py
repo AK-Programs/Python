@@ -1,4 +1,4 @@
-# Take out your Percentages in your subjects (Advanced) Code-1
+# Take out your Percentages in your subjects
 print("How to take out your percentages in your subjects (Tell your score in each subject below then we will give you your percentage)")
 outof = int(input("What is the Maxmimum marks of each subject: ")) 
 sub1 = int(input("Enter your score in Maths: "))
