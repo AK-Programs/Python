@@ -1,8 +1,6 @@
 # Name your 2 favorite movie
-
 print("Can you Type your Top 2 movies name Below")
 
-# Creates the movie in a dictnory
 movie = []
 
 mov1 = str(input("Type your Top 2nd movie name: "))
