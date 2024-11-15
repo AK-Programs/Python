@@ -7,7 +7,7 @@ count = {
 
 guess = int(input("Enter how many unique alphabets are written above: "))
 
-if guess == len(count):
+if guess == len(count): 
     print("You are correct!")
 else:
     print(f"You are INCORRECT! The correct number is {len(count)}.")
