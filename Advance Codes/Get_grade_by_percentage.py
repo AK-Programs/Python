@@ -1,4 +1,4 @@
-# Take out your grade by your percentages (Advanced) Code-2
+# Take out your grade by your percentages
 
 percentage = float(input("Enter your percentages to check your Grade: "))
 
