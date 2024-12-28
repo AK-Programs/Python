@@ -1,7 +1,7 @@
 
 <h1>Python Codes</h1>
 <hr>
-<h3>Advanced and Basic Python Codes</h3>
+<h3>Advanced Python Codes</h3>
 <h3>New Codes are arrived ✨</h3>
 <ul>
   <li>Perfect Codes</li>
