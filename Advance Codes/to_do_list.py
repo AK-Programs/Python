@@ -1,6 +1,7 @@
 def to_do_list():
     print("Welcome to the To-Do List Manager!")
-
+    # For running this code you need to make a file named "to_do_list_data.txt" or you don't want to make file code will automatically create the file.
+    # If you want to make file but you don't need to name it as "to_do_list_data.txt" you need to change the name of file where to_do_list_data.txt file is written and replace to your file name/path
     while True:
 
         work = input(
