@@ -5,7 +5,7 @@ def to_do_list():
 
         work = input(
             "What do you want to do? "
-            "'Create a To-Do (A)', 'View your To-Do List (Q)', 'Clear your To-Do List (S)', 'Edit your To-Do (W)', 'Exit (D)' : ") .strip() .lower()
+            "'Create a To-Do (A)', 'View your To-Do List (Q)', 'Clear your To-Do List or Delete a To-Do (S)', 'Edit your To-Do (W)', 'Exit (D)' : ") .strip() .lower()
 
         if work == "a":
             to_do = input("What do you want to add to your list? ")
@@ -15,6 +15,12 @@ def to_do_list():
                 f.write(to_do + "\n")
                 f.close()
                 print(f"'{to_do}' has been added to your list.")
+                
+                with open("to_do_list_data.txt", "r") as f:
+                    data = f.read()
+                    if to_do in data:
+                        print(f"'{to_do}' is already in your To-Do List.")
+                
             else:
                 print(f"'{to_do}' has not been added to your list.")
                 
@@ -35,9 +41,9 @@ def to_do_list():
             f = open("to_do_list_data.txt", "r")
             to_do_manage = f.readlines()
             f.close()
-            if to_do_manage:
-                print("Are you sure you want to clear your To-Do List?")
-                confirm = input("Type 'Yes' to confirm: ").strip().lower()
+            delete_line = input("You want to clear your To-Do List or delete a To-Do? Type 'Clear' to clear your To-Do List or 'Delete' to delete a To-Do: ").strip().lower()
+            if delete_line == "clear":
+                confirm = input("Are you sure you want to clear your To-Do List? Type 'Yes' to confirm: ").strip().lower()
                 if confirm == "yes":
                     f = open("to_do_list_data.txt", "w")
                     f.close()
@@ -45,10 +51,38 @@ def to_do_list():
                 else:
                     print("Your To-Do List has not been cleared.")
                     
-                f = open("to_do_list_data.txt", "w")
-                f.close()
-            else:
-                print("Your To-Do List is already empty.")
+            elif delete_line == "delete":
+                    f = open("to_do_list_data.txt", "r")
+                    to_do_manage = f.readlines()
+                    if to_do_manage:
+                        index = 1  
+                        for task in to_do_manage:
+                            print(f"{index}. {task.strip()}")
+                            index += 1  
+                    else:
+                        print("Your To-Do List is empty.")
+                        return
+                    f.close()
+                
+                    f = open("to_do_list_data.txt", "r")
+                    print("Which task do you want to delete (Type the exact tast to delete): ") 
+                    data_delete = input("Enter the task you want to delete: ").strip()
+                    data = f.read()
+                    if data.find(data_delete) != -1:
+                        confirm = input(f"Are you sure you want to delete '{data_delete}'? Type 'Yes' to confirm: ").strip().lower()
+                        if confirm == "yes":
+                            str_delete_data = str(data_delete)
+                            deleted_data = data.replace(str_delete_data, "").strip()
+                            with open("to_do_list_data.txt", "w") as f:
+                                f.write(deleted_data)
+                            print(f"'{data_delete}' has been deleted.")
+                            change_data = data.strip().split("\n")
+                        else:
+                            print(f"'{data_delete}' has not been deleted.")
+                    else:
+                        print(f"'{data_delete}' is not in your To-Do List.")
+                        return
+                
                 
         elif work == "w":
             f = open("to_do_list_data.txt", "r")
