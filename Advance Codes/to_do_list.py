@@ -1,3 +1,5 @@
+# Before running the code you need to create a txt file named as (to_do_list_data.txt) in the same folder where python file is located.
+
 def to_do_list():
     print("Welcome to the To-Do List Manager!")
 
@@ -76,7 +78,8 @@ def to_do_list():
                             with open("to_do_list_data.txt", "w") as f:
                                 f.write(deleted_data)
                             print(f"'{data_delete}' has been deleted.")
-                            change_data = data.strip().split("\n")
+                            with open("to_do_list_data.txt", "a") as f:
+                                changed_data = f.write("\n")
                         else:
                             print(f"'{data_delete}' has not been deleted.")
                     else:
