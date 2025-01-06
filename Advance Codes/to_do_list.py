@@ -13,19 +13,16 @@ def to_do_list():
             to_do = input("What do you want to add to your list? ")
             confirm = input(f"Are you sure you want to add '{to_do}' to your list? Type 'Yes' to confirm: ").strip().lower()
             if confirm == "yes":
-                f = open("to_do_list_data.txt", "a")
-                f.write(to_do + "\n")
-                f.close()
-                print(f"'{to_do}' has been added to your list.")
-                
                 with open("to_do_list_data.txt", "r") as f:
-                    data = f.read()
-                    if to_do in data:
+                    data = f.readlines()
+                    if to_do + "\n" in data:
                         print(f"'{to_do}' is already in your To-Do List.")
-                
+                    else:
+                        with open("to_do_list_data.txt", "a") as f:
+                            f.write(to_do + "\n")
+                        print(f"'{to_do}' has been added to your list.")
             else:
-                print(f"'{to_do}' has not been added to your list.")
-                
+                print(f"'{to_do}' has not been added to your list.")                
 
         elif work == "q":
             f = open("to_do_list_data.txt", "r")
@@ -73,13 +70,14 @@ def to_do_list():
                     if data.find(data_delete) != -1:
                         confirm = input(f"Are you sure you want to delete '{data_delete}'? Type 'Yes' to confirm: ").strip().lower()
                         if confirm == "yes":
-                            str_delete_data = str(data_delete)
-                            deleted_data = data.replace(str_delete_data, "").strip()
-                            with open("to_do_list_data.txt", "w") as f:
-                                f.write(deleted_data)
+                            with open("to_do_list_data.txt", "r") as f:
+                                tasks = f.readlines()
+                                tasks.remove(data_delete + "\n")
+                                f = open("to_do_list_data.txt", "w")
+                                f.writelines(tasks) 
+                                f.close()
                             print(f"'{data_delete}' has been deleted.")
-                            with open("to_do_list_data.txt", "a") as f:
-                                changed_data = f.write("\n")
+                                
                         else:
                             print(f"'{data_delete}' has not been deleted.")
                     else:
