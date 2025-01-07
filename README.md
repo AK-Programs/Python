@@ -1,13 +1,19 @@
+<h1>Python Code Repository</h1>
 
-<h1>Python Codes</h1>
 <hr>
-<h3>Advanced Python Codes</h3>
-<h3>New Codes are arrived ✨</h3>
+
+<h3>Advanced Python Scripts Collection</h3>
+
+<h3>New Scripts Available ✨</h3>
+
 <ul>
-  <li>Perfect Codes</li>
-  <li>Useful Codes</li>
-  <li>Working Codes</li>
+  <li>Optimized Code Snippets for Better Performance</li>
+  <li>Real-World Problem Solutions</li>
+  <li>Diverse Examples for Learning</li>
 </ul>
-<h2>If you have any query , So comment or issue I will repair.</h2>
-<h3>Please Check out my Codes!</h3>
+
+<h2>For inquiries or issues with our scripts, please comment here, and I will respond quickly.</h2>
+
+<h3>We encourage you to explore our diverse code offerings!</h3>
+
 <hr>
