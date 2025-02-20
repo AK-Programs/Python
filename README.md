@@ -2,8 +2,6 @@
 
 <hr>
 
-<h3>Advanced Python Codes Collection</h3>
-
 <h3>New Codes Arrived ✨</h3>
 
 <ul>
