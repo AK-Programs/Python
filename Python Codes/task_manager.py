@@ -38,10 +38,9 @@ def task_manager():
                 for task in tasks:
                     print(f"{index}. {task.strip()}")
                     index += 1  
-                else:
-                    print("Your To-Do List is empty.")
-                    return
-            f.close()
+            else:
+                print("Your To-Do List is empty.")
+                return
                     
             f = open("task_manager_data.txt", "r")
             print("Which task do you want to delete (Type the exact tast to delete): ") 
