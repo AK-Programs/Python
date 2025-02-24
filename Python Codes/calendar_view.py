@@ -1,3 +1,12 @@
+# Calendar View
+
+# This script allows the user to view a calendar for a specific year.
+# The user can choose to view the entire year or a specific month.
+# The script will prompt the user to enter a valid year (between 1 and 9999).
+# If the user chooses to view a specific month, they will be prompted to enter a valid month (between 1 and 12).
+# After displaying the calendar, the user will be asked if they want to view another calendar.
+# The script will continue to run until the user chooses to exit.
+
 import calendar
 
 def calendar_view():
@@ -13,7 +22,7 @@ def calendar_view():
 
     if include_month == "y":
         while True:
-            month = int(input("Enter month: "))
+            month = int(input("Enter the month: "))
             if month >= 1 and month <= 12:
                 break
             else:
