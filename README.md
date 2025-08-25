@@ -1,4 +1,3 @@
-
 <main>
   <header>
     <h1>Python 🐍</h1>
